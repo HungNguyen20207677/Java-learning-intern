@@ -1,0 +1,6 @@
+Current ATM money is 10000000
+CustomerId: ab, balance: 30900100
+Current ATM money is 9800000
+ATM is out of money
+Current ATM money is 9800000
+Current ATM money is 10800000

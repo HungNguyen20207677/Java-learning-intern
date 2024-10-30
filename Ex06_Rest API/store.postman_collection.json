@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "ffce676d-986d-459e-ad16-52db038b7c4e",
+		"name": "store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27250451"
+	},
+	"item": [
+		{
+			"name": "Place Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"petId\": 0,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2024-03-26T07:37:41.797Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "petstore.swagger.io/v2/store/order",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"store",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Purchase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "petstore.swagger.io/v2/store/order/{orderId}?orderId=1",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"store",
+						"order",
+						"{orderId}"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Purchase",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "petstore.swagger.io/v2/store/order/{orderId}?orderId=1",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"store",
+						"order",
+						"{orderId}"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Inventories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "petstore.swagger.io/v2/store/inventory",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"store",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

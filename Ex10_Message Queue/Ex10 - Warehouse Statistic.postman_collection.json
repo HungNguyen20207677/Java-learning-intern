@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "e43559c5-3be9-4c4a-b31a-60be6dda20a2",
+		"name": "Ex10 - Warehouse Statistic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33681642",
+		"_collection_link": "https://www.postman.com/spaceflight-observer-35169078/workspace/ex7-restful-api-spring/collection/33681642-e43559c5-3be9-4c4a-b31a-60be6dda20a2?action=share&source=collection_link&creator=33681642"
+	},
+	"item": [
+		{
+			"name": "Get Statistics (Kafka Publish)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kafka/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kafka",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistics (RabbitMQ Publish)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rabbitmq/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rabbitmq",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

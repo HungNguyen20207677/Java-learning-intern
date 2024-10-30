@@ -1,0 +1,3 @@
+spring:
+  atm:
+    initial-money: 10000000
